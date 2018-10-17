@@ -1,5 +1,6 @@
 <?php  
  //fetch.php  
+ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
  include "../../../con_db.php";
  include "../../../fungsi_kakatu.php";
  if(isset($_POST["id_anggota"]))  
