@@ -12,5 +12,7 @@
       session_start();
       $_SESSION["id_jabatan_sebelumnya_edit"]=$row["jabatan"];
       echo json_encode($row);  
- }  
+ }  else {
+	echo "Error";
+ }
  ?>
