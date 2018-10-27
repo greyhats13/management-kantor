@@ -4,7 +4,7 @@
  include "../../../fungsi_kakatu.php";
  if(isset($_POST["id_anggota"]))  
  {  
-      $query = "SELECT DISTINCT a.id_anggota AS id_anggota,a.nama AS nama,a.email AS email, a.alamat AS alamat,a.tempat_lahir AS tempat_lahir,a.tgl_lahir AS tgl_lahir,a.no_ktp AS no_ktp,a.no_rekening AS no_rekening,a.npwp AS npwp,a.jenis_kelamin AS jenis_kelamin,a.status AS status,c.id_jabatan AS jabatan FROM tb_anggota a JOIN jabatan_anggota b ON a.id_anggota=b.id_anggota JOIN tb_jabatan c ON c.id_jabatan = b.id_jabatan WHERE a.id_anggota = '".$_POST["id_anggota"]."'";  
+      $query = "SELECT a.id_anggota AS id_anggota,a.nama AS nama,a.email AS email, a.alamat AS alamat,a.tempat_lahir AS tempat_lahir,a.tgl_lahir AS tgl_lahir,a.no_ktp AS no_ktp,a.no_rekening AS no_rekening,a.npwp AS npwp,a.jenis_kelamin AS jenis_kelamin,a.status AS status,c.id_jabatan AS jabatan FROM tb_anggota a JOIN jabatan_anggota b ON a.id_anggota=b.id_anggota JOIN tb_jabatan c ON c.id_jabatan = b.id_jabatan WHERE a.id_anggota = '".$_POST["id_anggota"]."' GROUP BY id_anggota";  
       $result = mysqli_query($koneksi, $query);  
       $row = mysqli_fetch_array($result);
       //wq$row["password"]= decodeData($row["password"]); 

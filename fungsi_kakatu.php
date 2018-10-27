@@ -361,7 +361,7 @@ function emitData()
 {
     //Socket IO mulai
     //$version = new Version2X("https://localhost:9731", ['context' => ['ssl' => ['verify_peer_name' => false, 'verify_peer' => false]]]);
-    $version = new Version2X("https://absensi.tipsintelek.com:9731", ['context' => ['ssl' => ['verify_peer_name' => false, 'verify_peer' => false]]]);
+    $version = new Version2X("https://absensi.kakatu.co:9731", ['context' => ['ssl' => ['verify_peer_name' => false, 'verify_peer' => false]]]);
     $client = new Client($version);
     $client->initialize();
     $masuk = array("Submit");
