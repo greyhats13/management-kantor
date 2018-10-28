@@ -510,7 +510,7 @@ $(function () {
     //Jika Ada data permbaruan absensi, maka server push data update Dashboard ke client
     //Socket IO
     //var socket = io.connect("https://localhost:9731");
-    var socket = io.connect("https://absensi.kakatu:9731");
+    var socket = io.connect("https://main.tipsintelek:9731");
     socket.on("submit_baru", function (data) {
       //console.log(data);
       //ajaxGalleryAbsensiHariIni();
