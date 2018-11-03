@@ -2,7 +2,7 @@
 
 	$db_host = "localhost";
 	$db_user = "kakatuco_absensi";
-	$db_pass = "kinest01kakatu04";
+	$db_pass = "Dr@g013nm";
 	$db_name = "kakatuco_absensi";
 
 	$koneksi = mysqli_connect($db_host, $db_user, $db_pass);
